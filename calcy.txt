@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<style type="text/css">
+	
+	body {
+
+		background-image:linear-gradient(-90deg, red,#fff666,yellow,pink);
+		
+
+		
+	}
+
+	.f{
+		position:absolute; 
+		left:200px;
+		top:150px;
+
+
+		font-size: 100px;
+		letter-spacing: 2px;
+		font-family:cursive;
+		font-weight: bold;
+		font-style: italic;
+
+		animation-name: first;
+		animation-direction:alternate-reverse;
+		animation-iteration-count: infinite;
+		animation-duration: 1s;
+
+
+	}
+
+	@keyframes first 
+	{
+
+		0%{
+
+				color: red;
+				
+				transform:rotateY(360deg);
+
+
+		}
+
+		20%{
+		color: #993333;
+		}
+		40%{
+			color: yellow;
+		}
+
+		60%{
+			color:blue;
+		}
+
+		80%{
+			transform: scale(0.3);
+		}
+
+	
+	}
+
+	.s{
+		position:absolute; 
+		left:300px;
+		top:250px;
+
+		font-size: 75px;
+		letter-spacing: 2px;
+		font-family:cursive;
+		font-style: italic;
+
+			animation-name: second;
+		animation-direction:alternate-reverse;
+		animation-iteration-count: infinite;
+		animation-duration: 1s;
+
+	}
+
+@keyframes second 
+	{
+
+		0%{
+
+				color: red;
+				
+				
+
+
+		}
+
+		20%{
+			color: #993333;
+		}
+		40%{
+			color: yellow;
+		}
+
+		60%{
+			color:blue;
+		}
+
+		80%{
+			transform: translate(-50px);
+		}
+
+	}
+	.t{
+		position:absolute; 
+		left:350px;
+		top:350px;
+
+		font-size: 50px;
+		letter-spacing: 2px;
+		font-family:cursive;
+		font-style: italic;
+
+			animation-name: third;
+		animation-direction:alternate-reverse;
+		animation-iteration-count: infinite;
+		animation-duration: 1s;
+
+	}
+
+
+	@keyframes third 
+	{
+
+		0%{
+
+				color: red;
+				
+				
+
+
+		}
+
+		20%{
+			color: #993333;
+		}
+		40%{
+			color: yellow;
+		}
+
+		60%{
+			color:blue;
+		}
+		80%{
+			transform: translate(-50px);
+		}
+
+		100%{
+				transform: translate(-100px);
+		}
+
+	}
+
+
+
+
+
+	.outer
+	{
+		position: absolute;
+
+		top:50px;
+		left: 690px;
+		width: 300px;
+		height: 450px;
+
+		background:black;
+		border-radius: 10px;
+		border: 2px solid black;
+
+		overflow: hidden;
+
+		user-select: none;
+
+		-webkit-box-reflect:right 2px linear-gradient(transparent,black);
+		
+	}
+
+	.inner
+	{
+		position: absolute;
+		top:3px;
+		left:3px;
+
+		width:291px;
+		height: 90px;
+
+		border: 1px solid white;
+
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		
+
+
+	}
+
+	#screen{
+
+		position: absolute;
+
+		top:17px;
+		left:10px;
+
+		width: 270px;
+		height:1.5cm;
+
+		box-sizing: border-box;
+
+		background: black;
+		border-radius: 10px;
+		border: 1px solid white;
+
+	}
+
+	#screen:hover
+	{
+		box-shadow: 0 0  10px #00ffff,
+				0 0 20px #00ffff,
+				0 0 30px #00ffff,
+				0 0 40px #00ffff,
+				0 0 50px #00ffff; 
+
+}
+
+
+	input[type]
+	{
+		position: absolute;
+		top:4px;
+		left: 4px;
+
+		width: 95%;
+		height: 80%;
+
+		font-size: 20px;
+		letter-spacing: 5px;
+		background:black;
+		border: 1px solid white;
+		color: white;
+		border-radius: 10px;
+		outline:none;
+
+	}
+
+	.buttons{
+
+		position: absolute;
+		top:100px;
+		left:2px;
+
+		width: 97.5%;
+		height:76.5%;
+	
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid white; 
+	}
+
+	button{
+
+		
+		background: white;
+		width: 50px;
+		height: 50px;
+		margin-top: 15px;
+		margin-left: 15px;
+		font-size: 20px;
+		font-variant-numeric:ordinal;
+		border-radius: 30px;
+		color: white;
+		background: black;
+		font-style:italic;
+		border: 1px solid white;
+		outline: none;
+
+
+
+	}
+
+	button:hover
+	{
+
+		background:#00ffff;
+		border:1px solid black;
+		color: black;
+		font-size: 20px;
+		box-shadow: 0 0  10px #00ffff,
+				0 0 20px #00ffff,
+				0 0 30px #00ffff,
+				0 0 40px #00ffff,
+				0 0 50px #00ffff; 
+
+		transform: scale(1.1);
+		box-sizing: border-box;
+	}
+
+	.equal{
+
+		width: 50px;
+	}
+
+	.zero{
+
+		font-size: 15px;
+		width:190px;
+		letter-spacing: 4px;
+	}
+
+	.clear{
+
+		width: 50px;
+		font-size: 12px;
+	}
+
+
+
+
+</style>
+<body>
+
+<span class="f">Do </span>
+<span class="s">Your </span>
+<span class="t">Calculation. </span>
+	<div class="outer">
+		<div class="inner">
+			<div id="screen" >
+				
+				<input type="text" name="" id="output"/>
+			</div>
+		</div>
+
+		<div class="buttons">
+
+		<button value="1" onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">1</button>
+		<button value="2" onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">2</button>
+		<button value="3"  onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">3</button>
+		<button  value="+" onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">+</button>
+		
+		<br>
+
+		<button value="4"  onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">4</button>
+		<button value="5"  onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">5</button>
+		<button value="6"  onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">6</button>
+		<button value="-"  onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">-</button>
+		
+		<br>
+		<button value="7"  onclick="data(this)"onfocus="fo(this)" onblur="blu(this)">7</button>
+		<button value="8"  onclick="data(this)"onfocus="fo(this)" onblur="blu(this)">8</button>
+		<button value="9"  onclick="data(this)"onfocus="fo(this)" onblur="blu(this)">9</button>
+		<button value="*"  onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">*</button>
+		
+		<br>
+
+		<button value="."  onclick="data(this)"onfocus="fo(this)" onblur="blu(this)">.</button>
+		<button value="0"  onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">0</button>
+	
+		<button  class="equal"value="="   onclick="operation(this)"onfocus="fo(this)" onblur="blu(this)">=</button>
+			<button value="/"  onclick="data(this)"onfocus="fo(this)" onblur="blu(this)">/</button>
+		
+		
+		<br>
+
+		<button  class="clear" onclick="clr()" onfocus="fo(this)" onblur="blu(this)">wipe</button>
+		<button class="zero" value="00" onclick="data(this)" onfocus="fo(this)" onblur="blu(this)">00</button>
+		
+		
+		
+		<br>
+
+
+
+		</div>
+
+
+	</div>
+
+
+
+
+
+<script type="text/javascript">
+	
+	document.querySelector("#output").readOnly=true;
+	document.querySelector(".buttons").children.disabled=true;
+
+	function clr(){
+
+		document.querySelector("#output").value="";
+	}
+
+
+	
+
+	function fo(current_button)
+	{
+		current_button.style.background="#99ffdd";
+		current_button.style.color="black";
+
+	}
+
+	function blu(current_button)
+	{
+		current_button.style.background="";
+		current_button.style.color="";
+	}
+
+
+	function data(current_digit)
+	{
+		var xx=current_digit.value;
+
+		
+	
+
+		document.querySelector("#output").value+=xx;
+
+
+
+
+		
+	}
+
+	function operation(zz)
+	{
+
+		
+
+		 var store=document.querySelector("#output").value;
+		 
+		 var ans=eval(store);
+
+		 	document.querySelector("#output").value=ans;
+
+
+
+
+	}
+
+
+	
+
+</script>
+</body>
+</html>
